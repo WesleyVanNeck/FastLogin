@@ -163,12 +163,6 @@
             <artifactId>api</artifactId>
             <version>${floodgate.version}</version>
             <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <!-- Bedrock player bridge -->
@@ -191,12 +185,6 @@
             <artifactId>api</artifactId>
             <version>${geyser.version}</version>
             <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <!--Common component for contacting the Mojang API-->

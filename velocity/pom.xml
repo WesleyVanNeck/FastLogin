@@ -207,6 +207,14 @@
             </exclusions>
         </dependency>
 
+        <!-- We need the API, but it was excluded above -->
+        <dependency>
+            <groupId>org.geysermc.geyser</groupId>
+            <artifactId>api</artifactId>
+            <version>${geyser.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Floodgate -->
         <dependency>
             <groupId>org.geysermc.floodgate</groupId>

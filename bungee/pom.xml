@@ -109,6 +109,14 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <!-- Floodgate -->
+        <repository>
+            <id>opencollab</id>
+            <url>https://repo.opencollab.dev/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -222,12 +230,6 @@
             <artifactId>api</artifactId>
             <version>${geyser.version}</version>
             <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <!--Login plugin-->
@@ -237,6 +239,13 @@
             <version>1.4</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/BungeeAuth-1.4.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.100.Final</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
