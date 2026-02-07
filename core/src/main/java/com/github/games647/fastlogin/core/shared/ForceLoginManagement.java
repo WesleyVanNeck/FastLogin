@@ -81,7 +81,7 @@ public abstract class ForceLoginManagement<P extends C, C, L extends LoginSessio
                         //update only on success to prevent corrupt data
                         if (playerProfile != null) {
                             playerProfile.setId(session.getUuid());
-                            // playerProfile.setOnlinemodePreferred(true);
+                            playerProfile.setOnlinemodePreferred(true);
                             storage.save(playerProfile);
                         }
 
