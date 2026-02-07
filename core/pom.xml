@@ -62,9 +62,6 @@
         <repository>
             <id>opencollab</id>
             <url>https://repo.opencollab.dev/maven-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
         </repository>
     </repositories>
 
