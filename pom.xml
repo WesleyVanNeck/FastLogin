@@ -62,17 +62,24 @@
         <module>bungee</module>
         <module>velocity</module>
     </modules>
+    <repositories>
+        <repository>
+            <id>opencollab-repo</id>
+            <url>https://repo.opencollab.dev/maven-releases/</url>
+        </repository>
+
+        <repository>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
+        </repository>
+        <repository>
+            <id>opencollab-snapshot</id>
+            <url>https://repo.opencollab.dev/maven-snapshots</url>
+        </repository>
+    </repositories>
 
     <!--Deployment configuration for the Maven repository-->
     <distributionManagement>
-        <snapshotRepository>
-            <id>codemc-snapshots</id>
-            <url>https://repo.codemc.io/repository/maven-snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>codemc-releases</id>
-            <url>https://repo.codemc.io/repository/maven-releases/</url>
-        </repository>
     </distributionManagement>
 
     <build>
